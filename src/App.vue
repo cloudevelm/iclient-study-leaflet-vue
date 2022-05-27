@@ -1,0 +1,29 @@
+<template>
+  <MapComponent/>
+  <DrawTool/>
+</template>
+
+<script>
+
+import MapComponent from "@/components/MapComponent";
+import DrawTool from "@/components/DrawTool";
+export default {
+  name: 'App',
+  components: {DrawTool, MapComponent},
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+</style>
